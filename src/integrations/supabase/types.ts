@@ -14,7 +14,51 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      project_inquiries: {
+        Row: {
+          budget_range: string | null
+          consent: boolean
+          created_at: string
+          email: string
+          full_name: string
+          id: string
+          inquiry_type: string
+          message: string
+          organization: string | null
+          project_location: string | null
+          project_stage: string | null
+          stakeholder_type: string | null
+        }
+        Insert: {
+          budget_range?: string | null
+          consent: boolean
+          created_at?: string
+          email: string
+          full_name: string
+          id?: string
+          inquiry_type: string
+          message: string
+          organization?: string | null
+          project_location?: string | null
+          project_stage?: string | null
+          stakeholder_type?: string | null
+        }
+        Update: {
+          budget_range?: string | null
+          consent?: boolean
+          created_at?: string
+          email?: string
+          full_name?: string
+          id?: string
+          inquiry_type?: string
+          message?: string
+          organization?: string | null
+          project_location?: string | null
+          project_stage?: string | null
+          stakeholder_type?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
