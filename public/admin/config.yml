@@ -6,23 +6,13 @@ media_folder: "public/images"
 public_path: "/images"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "site_images"
+    label: "Site Images & Media"
     files:
-      - file: "src/content/home.md"
-        label: "Home Page"
-        name: "home"
+      - file: "src/content/media.json"
+        label: "Hero & Assets"
+        name: "hero_and_assets"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
           - {label: "Hero Image", name: "heroImage", widget: "image", required: false}
-
-  - name: "settings"
-    label: "Site Settings"
-    files:
-      - file: "src/content/settings.json"
-        label: "General Settings"
-        name: "general"
-        fields:
           - {label: "Site Favicon", name: "favicon", widget: "image", required: false}
-          - {label: "Logo", name: "logo", widget: "image", required: false}
+          - {label: "Website Logo", name: "logo", widget: "image", required: false}
