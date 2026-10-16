@@ -8,3 +8,7 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Company facts (projects, services, news, metrics, contact) live only in `src/lib/site-data.ts`; pages read from it so updates happen in one place.
+- Project inquiries go through the `submitInquiry` server function into the `project_inquiries` table (insert-only RLS for the public); never fake a form success message.
