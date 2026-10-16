@@ -35,14 +35,14 @@ function Contact() {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
     const raw = Object.fromEntries(fd.entries()) as Record<string, unknown>;
-    raw.consent = fd.get("consent") === "on";
+    raw["consent"] = fd.get("consent") === "on";
     const parsed = inquirySchema.safeParse(raw);
     if (!parsed.success) {
       const errs: Record<string, string> = {};
       for (const i of parsed.error.issues) errs[String(i.path[0])] ??= i.message;
       setErrors(errs);
       const first = Object.keys(errs)[0];
-      document.getElementById(first)?.focus();
+      if (first) document.getElementById(first)?.focus();
       return;
     }
     setErrors({});
