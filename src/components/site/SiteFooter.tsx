@@ -44,7 +44,7 @@ export function SiteFooter() {
       <div className="border-t border-ink-border">
         <div className="container-site flex flex-col gap-2 py-6 text-sm text-ink-muted sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} {company.legalName}. All rights reserved.</p>
-          <Link to="/privacy" className="hover:text-ink-foreground">Privacy Policy</Link>
+          <Link to="/privacy" className="hover:text-ink-foreground">Project: SAAVEDRA</Link>
         </div>
       </div>
     </footer>
