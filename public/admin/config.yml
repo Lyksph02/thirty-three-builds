@@ -15,3 +15,14 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
+          - {label: "Hero Image", name: "heroImage", widget: "image", required: false}
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "src/content/settings.json"
+        label: "General Settings"
+        name: "general"
+        fields:
+          - {label: "Site Favicon", name: "favicon", widget: "image", required: false}
+          - {label: "Logo", name: "logo", widget: "image", required: false}
