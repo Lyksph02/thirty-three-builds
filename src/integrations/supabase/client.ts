@@ -45,7 +45,6 @@ function createSupabaseFetch(supabaseUrl: string, supabaseKey: string): typeof f
   };
 }
 
-
 function createSupabaseClient() {
   const SUPABASE_URL = 'https://asuptnttjwntqlgrmbtc.supabase.co';
   const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_SQJgslBtmmZxQ6j8EeATSg_zX8m5iZ8';
@@ -72,4 +71,3 @@ export const supabase = new Proxy({} as ReturnType<typeof createSupabaseClient>,
     return Reflect.get(_supabase, prop, receiver);
   },
 });
-
