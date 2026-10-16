@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Building2 } from "lucide-react";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
-import { metrics, type Project } from "@/lib/site-data";
+import { company, metrics, type Project } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
 
 export function SectionHeading({ eyebrow, title, intro, align = "left", tone = "light" }: { eyebrow: string; title: ReactNode; intro?: ReactNode; align?: "left" | "center"; tone?: "light" | "dark" }) {
@@ -119,7 +119,7 @@ export function ClosingCta({ title = "Have a housing or development project in m
           <p className="mt-4 text-lg opacity-90">{body}</p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <Button asChild variant="ink" size="xl"><Link to="/contact">Start a Project Conversation</Link></Button>
+          <Button asChild variant="ink" size="xl"><a href={company.calendly} target="_blank" rel="noopener noreferrer">Start a Project Conversation</a></Button>
           <Button asChild variant="outline-light" size="xl"><Link to="/contact" hash="direct">Contact Our Team</Link></Button>
         </div>
       </div>

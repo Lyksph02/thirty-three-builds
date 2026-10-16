@@ -13,9 +13,9 @@ export function SiteFooter() {
             <span className="font-display text-lg font-bold">{company.name}</span>
           </div>
           <p className="mt-5 max-w-sm text-ink-muted">{company.description}</p>
-          <Link to="/contact" className="mt-6 inline-block font-display font-semibold text-ink-foreground underline decoration-primary decoration-2 underline-offset-8 hover:text-primary">
+          <a href={company.calendly} target="_blank" rel="noopener noreferrer" className="mt-6 inline-block font-display font-semibold text-ink-foreground underline decoration-primary decoration-2 underline-offset-8 hover:text-primary">
             Start a project conversation →
-          </Link>
+          </a>
         </div>
         <div className="md:col-span-3">
           <h2 className="eyebrow">Explore</h2>

@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { images, navLinks } from "@/lib/site-data";
+import { company, images, navLinks } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
 
 export function SiteHeader() {
@@ -49,7 +49,7 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-2">
           <Button asChild variant="cta" className="hidden h-10 rounded-sm px-5 sm:inline-flex">
-            <Link to="/contact">Discuss Your Project</Link>
+            <a href={company.calendly} target="_blank" rel="noopener noreferrer">Discuss Your Project</a>
           </Button>
           <button
             type="button"
@@ -73,7 +73,7 @@ export function SiteHeader() {
               </Link>
             ))}
             <Button asChild variant="cta" size="xl" className="mt-4">
-              <Link to="/contact" onClick={() => setOpen(false)}>Discuss Your Project</Link>
+              <a href={company.calendly} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>Discuss Your Project</a>
             </Button>
           </div>
         </nav>

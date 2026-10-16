@@ -27,6 +27,7 @@ export const company = {
   address: { street: "213 Smithfield St", city: "Pittsburgh", region: "PA", postal: "15222" },
   instagram: "https://www.instagram.com/ryansanders_vc/",
   founder: "Ryan Sanders",
+  calendly: "https://calendly.com/lykamaysaavedra02/30min",
 };
 
 export const images = { hero: hero.url, groundbreaking: groundbreaking.url, groundbreakingTeam: groundbreakingTeam.url, team: team.url, logoDark: logoDark.url, logoLight: logoLight.url };

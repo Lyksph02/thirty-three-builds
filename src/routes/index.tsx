@@ -40,7 +40,7 @@ function Home() {
             From development planning to construction management and strategic consulting, 3T Construction Group works with public and private partners to advance housing developments and create lasting community value.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
-            <Button asChild variant="cta" size="xl"><Link to="/contact">Discuss Your Project <ArrowRight /></Link></Button>
+            <Button asChild variant="cta" size="xl"><a href={company.calendly} target="_blank" rel="noopener noreferrer">Discuss Your Project <ArrowRight /></a></Button>
             <Button asChild variant="outline-light" size="xl"><Link to="/projects">Explore Our Projects</Link></Button>
           </div>
           <p className="mt-10 text-sm text-ink-muted">15+ years of development experience across Pennsylvania communities.</p>

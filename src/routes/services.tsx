@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ClosingCta, PageHero, ProjectCard } from "@/components/site/blocks";
-import { images, projects, services } from "@/lib/site-data";
+import { company, images, projects, services } from "@/lib/site-data";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -34,7 +34,7 @@ function Services() {
               <span className="font-display text-sm font-bold text-primary">0{i + 1}</span>
               <h2 className="mt-4 text-3xl font-bold md:text-5xl">{s.title}</h2>
               <p className="mt-6 text-lg text-muted-foreground">{s.description}</p>
-              <Button asChild variant="cta" size="xl" className="mt-8"><Link to="/contact">Discuss Your Project</Link></Button>
+              <Button asChild variant="cta" size="xl" className="mt-8"><a href={company.calendly} target="_blank" rel="noopener noreferrer">Discuss Your Project</a></Button>
             </div>
             <ul className="divide-y self-start rounded-sm border bg-card lg:col-span-6">
               {s.items.map((it) => (
