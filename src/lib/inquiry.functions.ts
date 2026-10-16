@@ -20,7 +20,7 @@ export const submitInquiry = createServerFn({ method: "POST" })
   .inputValidator((d: unknown) => inquirySchema.parse(d))
   .handler(async ({ data }) => {
     if (data.website) return { ok: true }; // silently drop bots
-    const supabase = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_PUBLISHABLE_KEY!, {
+    const supabase = createClient(process.env["SUPABASE_URL"]!, process.env["SUPABASE_PUBLISHABLE_KEY"]!, {
       auth: { persistSession: false, autoRefreshToken: false },
     });
     const { website: _w, ...row } = data;
