@@ -34,7 +34,7 @@ export const images = {
   hero: "/images/herosec", 
   groundbreaking: "/images/herosec", 
   groundbreakingTeam: "/images/3t-logo.png", 
-  team: "/images/3t-logo.png", 
+  team: "/images/ryan-sanders.jpg", 
   logoDark: "/images/3t-logo.png", 
   logoLight: "/images/3t-logo.png" 
 };
