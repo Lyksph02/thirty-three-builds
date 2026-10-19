@@ -51,7 +51,7 @@ function Contact() {
     setStatus("sending");
 
     try {
-      // Isusumite ang validated data sa iyong Make.com Custom Webhook URL
+      // Isusumite ang validated data sa Make.com Custom Webhook URL
       const response = await fetch("https://hook.us2.make.com/ovkmcd7g0ugrz5aiayc3c9a8gldw2l1b", {
         method: "POST",
         headers: {
@@ -64,7 +64,7 @@ function Contact() {
         throw new Error("Failed to send submission to webhook.");
       }
 
-      // Opsyonal: Patakbuhin pa rin ang orihinal na function kung may local database setup
+      // Opsyonal: Patakbuhin pa rin ang local submission function kung kinakailangan
       await submitInquiry({ data: parsed.data });
 
       setStatus("done");
@@ -72,7 +72,6 @@ function Contact() {
       setServerError(err instanceof Error ? err.message : "Something went wrong.");
       setStatus("error");
     }
-  }
   }
 
   const err = (k: string) => errors[k] && <p id={`${k}-error`} className="mt-1 text-sm text-destructive">{errors[k]}</p>;
