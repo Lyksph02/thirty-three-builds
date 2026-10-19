@@ -30,7 +30,14 @@ export const company = {
   calendly: "https://calendly.com/lykamaysaavedra02/30min",
 };
 
-export const images = { hero: "/images/herosec", groundbreaking: "/images/herosec", groundbreakingTeam: "/images/herosec", team: "/images/herosec", logoDark: logoDark, logoLight: logoLight };
+export const images = { 
+  hero: "/images/herosec", 
+  groundbreaking: "/images/herosec", 
+  groundbreakingTeam: "/images/3t-logo.png", 
+  team: "/images/3t-logo.png", 
+  logoDark: "/images/3t-logo.png", 
+  logoLight: "/images/3t-logo.png" 
+};
 
 export const metrics = [
   { value: 15, suffix: "+", prefix: "", label: "Years of real estate development experience" },
@@ -85,16 +92,16 @@ export type Project = {
 
 /** Names and locations from the existing portfolio. Roles, status and details pending 3T confirmation. */
 export const projects: Project[] = [
-  { slug: "savoy-48", name: "Savoy 48", location: "Harrisburg, PA", type: "Affordable Housing", image: savoy.url, featured: true },
-  { slug: "jmb-gardens", name: "JMB Gardens", location: "Harrisburg, PA", type: "Affordable Housing", image: jmb.url, featured: true },
-  { slug: "beacon-of-hope", name: "Beacon of Hope", location: "Philadelphia, PA", type: "Residential Development", image: beacon.url, featured: true },
-  { slug: "lg-lofts", name: "LG Lofts", location: "New Castle, PA", type: "Residential Development", image: lgLofts.url, featured: true },
-  { slug: "bethel-village", name: "Bethel Village", location: "Harrisburg, PA", type: "Affordable Housing", image: bethel.url, featured: true },
-  { slug: "tioga-arms", name: "Tioga Arms", location: "Philadelphia, PA", type: "Residential Development", image: tioga.url, featured: true },
-  { slug: "legacy-wilkinsburg", name: "Legacy – Wilkinsburg", location: "Wilkinsburg, PA", type: "Residential Development", image: legacy.url },
-  { slug: "medical-row-apartments", name: "Medical Row Apartments", location: "York, PA", type: "Residential Development", image: medical.url },
-  { slug: "bretz-court", name: "Bretz Court", location: "Location pending confirmation", type: "Residential Development" },
-  { slug: "bailey-street-townhomes", name: "Bailey Street Townhomes", location: "Location pending confirmation", type: "Residential Development" },
+  { slug: "savoy-48", name: "Savoy 48", location: "Harrisburg, PA", type: "Affordable Housing", image: "/images/savoy-48.jpg", featured: true },
+  { slug: "jmb-gardens", name: "JMB Gardens", location: "Harrisburg, PA", type: "Affordable Housing", image: "/images/jmb-gardens.jpg", featured: true },
+  { slug: "beacon-of-hope", name: "Beacon of Hope", location: "Philadelphia, PA", type: "Residential Development", image: "/images/beacon-of-hope.jpg", featured: true },
+  { slug: "lg-lofts", name: "LG Lofts", location: "New Castle, PA", type: "Residential Development", image: "/images/lg-lofts.jpg", featured: true },
+  { slug: "bethel-village", name: "Bethel Village", location: "Harrisburg, PA", type: "Affordable Housing", image: "/images/bethel-village.jpg", featured: true },
+  { slug: "tioga-arms", name: "Tioga Arms", location: "Philadelphia, PA", type: "Residential Development", image: "/images/tioga-arms.jpg", featured: true },
+  { slug: "legacy-wilkinsburg", name: "Legacy – Wilkinsburg", location: "Wilkinsburg, PA", type: "Residential Development", image: "/images/legacy-wilkinsburg.jpg" },
+  { slug: "medical-row-apartments", name: "Medical Row Apartments", location: "York, PA", type: "Residential Development", image: "/images/medical-row-apartment.jpg" },
+  { slug: "bretz-court", name: "Bretz Court", location: "Location pending confirmation", type: "Residential Development", image: "/images/bretz-court.jpg" },
+  { slug: "bailey-street-townhomes", name: "Bailey Street Townhomes", location: "Location pending confirmation", type: "Residential Development", image: "/images/herosec" },
 ];
 
 export const projectTypes = ["All", "Affordable Housing", "Residential Development"] as const;
