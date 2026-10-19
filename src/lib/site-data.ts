@@ -10,8 +10,8 @@ import groundbreaking from "@/assets/groundbreaking.jpg.asset.json";
 import groundbreakingTeam from "@/assets/groundbreaking-team.jpg.asset.json";
 import hero from "@/assets/hero-construction.jpg.asset.json";
 import team from "@/assets/team.jpg.asset.json";
-import logoDark from "@/assets/logo-dark.png.asset.json";
-import logoLight from "@/assets/logo-light.png.asset.json";
+const logoDark = "/images/3t-logo.png";
+const logoLight = "/images/3t-logo.png";
 
 /**
  * Single source of truth for company facts.
@@ -30,7 +30,7 @@ export const company = {
   calendly: "https://calendly.com/lykamaysaavedra02/30min",
 };
 
-export const images = { hero: hero.url, groundbreaking: groundbreaking.url, groundbreakingTeam: groundbreakingTeam.url, team: team.url, logoDark: logoDark.url, logoLight: logoLight.url };
+export const images = { hero: "/images/herosec", groundbreaking: "/images/herosec", groundbreakingTeam: "/images/herosec", team: "/images/herosec", logoDark: logoDark, logoLight: logoLight };
 
 export const metrics = [
   { value: 15, suffix: "+", prefix: "", label: "Years of real estate development experience" },
