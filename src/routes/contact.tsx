@@ -37,6 +37,7 @@ function Contact() {
     const raw = Object.fromEntries(fd.entries()) as Record<string, unknown>;
     raw["consent"] = fd.get("consent") === "on";
     const parsed = inquirySchema.safeParse(raw);
+
     if (!parsed.success) {
       const errs: Record<string, string> = {};
       for (const i of parsed.error.issues) errs[String(i.path[0])] ??= i.message;
@@ -45,15 +46,33 @@ function Contact() {
       if (first) document.getElementById(first)?.focus();
       return;
     }
+
     setErrors({});
     setStatus("sending");
+
     try {
+      // Isusumite ang validated data sa iyong Make.com Custom Webhook URL
+      const response = await fetch("https://hook.us2.make.com/ovkmcd7g0ugrz5aiayc3c9a8gldw2l1b", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(parsed.data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send submission to webhook.");
+      }
+
+      // Opsyonal: Patakbuhin pa rin ang orihinal na function kung may local database setup
       await submitInquiry({ data: parsed.data });
+
       setStatus("done");
     } catch (err) {
       setServerError(err instanceof Error ? err.message : "Something went wrong.");
       setStatus("error");
     }
+  }
   }
 
   const err = (k: string) => errors[k] && <p id={`${k}-error`} className="mt-1 text-sm text-destructive">{errors[k]}</p>;
