@@ -10,6 +10,7 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "Learn about 3T Construction Group, a real estate development firm with 15+ years of experience in affordable and market-rate housing and government relations." },
       { property: "og:title", content: "About 3T Construction Group" },
       { property: "og:description", content: "15+ years of real estate development experience in affordable and market-rate housing." },
+      { name: "author", content: "Lyks Saavedra" },
     ],
   }),
   component: About,

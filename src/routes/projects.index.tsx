@@ -11,6 +11,7 @@ export const Route = createFileRoute("/projects/")({
       { name: "description", content: "Explore 3T Construction Group's portfolio including Savoy 48, JMB Gardens, Bethel Village, Beacon of Hope, LG Lofts and Tioga Arms." },
       { property: "og:title", content: "Projects | 3T Construction Group" },
       { property: "og:description", content: "Affordable and residential housing developments across Pennsylvania." },
+      { name: "author", content: "Lyks Saavedra" },
     ],
   }),
   component: Projects,

@@ -83,7 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "3T Construction Group | Affordable Housing Development" },
       { name: "description", content: "3T Construction Group is a real estate development firm specializing in affordable housing, construction management and public-private partnerships." },
-      { name: "author", content: "3T Construction Group" },
+      { name: "author", content: "Lyks Saavedra" },
       { property: "og:site_name", content: "3T Construction Group" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

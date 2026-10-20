@@ -11,6 +11,7 @@ export const Route = createFileRoute("/services")({
       { name: "description", content: "Affordable housing development, construction management, public-private partnerships, LIHTC feasibility analysis and grant compliance from 3T Construction Group." },
       { property: "og:title", content: "Services | 3T Construction Group" },
       { property: "og:description", content: "Affordable housing development, public-private partnerships and development consulting." },
+      { name: "author", content: "Lyks Saavedra" },
     ],
   }),
   component: Services,

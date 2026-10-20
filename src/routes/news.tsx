@@ -9,6 +9,7 @@ export const Route = createFileRoute("/news")({
       { name: "description", content: "Groundbreakings, project announcements and media coverage of 3T Construction Group's affordable housing developments in Harrisburg and beyond." },
       { property: "og:title", content: "News & Media | 3T Construction Group" },
       { property: "og:description", content: "Project milestones and media coverage from 3T Construction Group." },
+      { name: "author", content: "Lyks Saavedra" },
     ],
   }),
   component: News,

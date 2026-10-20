@@ -11,6 +11,7 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Pennsylvania real estate development firm delivering affordable housing, construction management, LIHTC consulting and public-private partnerships." },
       { property: "og:title", content: "3T Construction Group | Building Housing Solutions" },
       { property: "og:description", content: "Development planning, construction management and strategic consulting for public and private housing partners." },
+      { name: "author", content: "Lyks Saavedra" },
     ],
   }),
   component: Home,

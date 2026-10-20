@@ -32,8 +32,8 @@ export const company = {
 
 export const images = { 
   hero: "/images/herosec", 
-  groundbreaking: "/images/herosec", 
-  groundbreakingTeam: "/images/3t-logo.png", 
+  groundbreaking: "/images/ryan-sanders.jpg", 
+  groundbreakingTeam: "/images/bretz-court.png", 
   team: "/images/ryan-sanders.jpg", 
   logoDark: "/images/3t-logo.png", 
   logoLight: "/images/3t-logo.png" 

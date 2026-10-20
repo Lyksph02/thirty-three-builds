@@ -13,6 +13,7 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Start a conversation about affordable housing development, construction management, public-private partnerships or development consulting." },
       { property: "og:title", content: "Contact 3T Construction Group" },
       { property: "og:description", content: "Tell us about your housing or development project." },
+      { name: "author", content: "Lyks Saavedra" },
     ],
   }),
   component: Contact,
