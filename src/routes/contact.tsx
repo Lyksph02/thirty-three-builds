@@ -51,20 +51,7 @@ function Contact() {
     setStatus("sending");
 
     try {
-      // Isusumite ang validated data sa Make.com Custom Webhook URL
-      const response = await fetch("https://hook.us2.make.com/ovkmcd7g0ugrz5aiayc3c9a8gldw2l1b", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(parsed.data),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to send submission to webhook.");
-      }
-
-      // Opsyonal: Patakbuhin pa rin ang local submission function kung kinakailangan
+      // Mabilis na pag-save sa Supabase (ang SQL trigger na ang bahala mag-post sa Make.com)
       await submitInquiry({ data: parsed.data });
 
       setStatus("done");
